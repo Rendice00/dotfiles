@@ -1,16 +1,14 @@
 ## Requirements
 
-Git
-...
-Stow
-...
+### Git
+### Stow
 
 ## Installation
-
+```
 $ git clone git@github.com:Rendice00/dotfiles.git
-...
 $ cd dotfiles
-...
+```
 use GNU stow to symlink
-...
+```
 $ stow .
+```
