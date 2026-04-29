@@ -1,7 +1,11 @@
 ## Requirements
 
-### Git
-### Stow
+#### Git
+#### Vim
+#### Tmux
+#### Zsh
+#### Oh-my-posh
+#### Stow
 
 ## Installation
 ```
@@ -12,3 +16,4 @@ use GNU stow to symlink
 ```
 $ stow .
 ```
+

@@ -3,4 +3,3 @@ noremap <leader>fo :History<CR>
 noremap <leader>fb :Buffers<CR>
 
 noremap <leader>fg :Rg <Space>
-#Something
