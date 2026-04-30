@@ -1,5 +1,7 @@
 set number
 set relativenumber
+set mouse=a
+set ttimeoutlen=10
 
 filetype plugin indent on
 set expandtab
@@ -8,5 +10,9 @@ set softtabstop=4
 set tabstop=4
 set smartindent
 set clipboard=unnamedplus
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
 
 syntax on
