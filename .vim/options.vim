@@ -14,5 +14,6 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-
+set completeopt=menu,menuone,noselect,noinsert
+set signcolumn=yes
 syntax on
