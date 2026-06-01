@@ -1,0 +1,6 @@
+require("options")
+require("plugins")
+require("ui")
+require("keymaps")
+require("lsp")
+require("cmp_config")
