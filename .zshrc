@@ -6,7 +6,7 @@ if [ ! -d "$ZINIT_HOME" ]; then
 fi
 
 source "${ZINIT_HOME}/zinit.zsh"
-
+export PATH="$HOME/nvim/bin:$PATH"
 #zsh plugins
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
@@ -15,11 +15,9 @@ zinit light Aloxaf/fzf-tab
 
 # Load completions
 autoload -U compinit && compinit
-
 zinit cdreplay -q
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
+
 # Keybindings
 bindkey '^f' autosuggest-accept
 bindkey '^p' history-search-backward
