@@ -34,8 +34,7 @@ require("lazy").setup({
 
   -- LSP
   { "neovim/nvim-lspconfig" },
-  {
-  "sphamba/smear-cursor.nvim",
+  {"sphamba/smear-cursor.nvim",
   opts = {
     -- Smear cursor when switching buffers or windows.
     smear_between_buffers = true,
@@ -55,5 +54,27 @@ require("lazy").setup({
     -- See also `vertical_bar_cursor_insert_mode` and `distance_stop_animating_vertical_bar`.
     smear_insert_mode = true,
   },
-}
+},
+{
+  "stevearc/conform.nvim",
+  opts = {
+    formatters = {
+      clang_format = {
+        prepend_args = {
+          "--style={IndentWidth: 4, TabWidth: 4, UseTab: Never}"
+        },
+      },
+    },
+
+    formatters_by_ft = {
+      cpp = { "clang_format" },
+      c = { "clang_format" },
+    },
+
+    format_on_save = {
+      timeout_ms = 500,
+      lsp_fallback = true,
+    },
+  },
+},
 })
