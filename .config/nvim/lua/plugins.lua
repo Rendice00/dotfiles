@@ -26,7 +26,12 @@ require("lazy").setup({
   -- statusline
   { "nvim-lualine/lualine.nvim" },
 
-  -- fzf
+  -- git
+  {
+  "lewis6991/gitsigns.nvim",
+  opts = {}, },
+
+  -- telescope
   { "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
 
   -- treesitter (BIG C++ upgrade)
@@ -34,6 +39,7 @@ require("lazy").setup({
 
   -- LSP
   { "neovim/nvim-lspconfig" },
+
   {"sphamba/smear-cursor.nvim",
   opts = {
     -- Smear cursor when switching buffers or windows.
@@ -53,9 +59,9 @@ require("lazy").setup({
     -- Smear cursor in insert mode.
     -- See also `vertical_bar_cursor_insert_mode` and `distance_stop_animating_vertical_bar`.
     smear_insert_mode = true,
-  },
-},
-{
+  }, },
+
+  {
   "stevearc/conform.nvim",
   opts = {
     formatters = {
