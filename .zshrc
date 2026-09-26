@@ -16,7 +16,8 @@ zinit light Aloxaf/fzf-tab
 # Load completions
 autoload -U compinit && compinit
 zinit cdreplay -q
-eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
+PROMPT='%~ ❯ '
+# eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
 
 # Keybindings
 bindkey '^f' autosuggest-accept
@@ -49,3 +50,4 @@ alias ls='ls --color'
 alias c='clear'
 
 # FZF shell integration
+export PATH="$PATH:$HOME/.local/share/yabridge"
