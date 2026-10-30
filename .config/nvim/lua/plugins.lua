@@ -14,7 +14,14 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   -- theme
-  { "folke/tokyonight.nvim" },
+  { "folke/tokyonight.nvim",
+  lazy = false,
+  priority = 1000,
+  opts = {
+    style = "night",
+    transparent = true,
+    },
+  },
   
   {
   "hrsh7th/nvim-cmp",
