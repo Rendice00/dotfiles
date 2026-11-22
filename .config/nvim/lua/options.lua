@@ -14,3 +14,5 @@ vim.opt.smartcase = true
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
 vim.opt.completeopt = { "menu", "menuone", "noselect" }
+vim.opt.cursorline = true
+vim.opt.cursorlineopt = "line"
