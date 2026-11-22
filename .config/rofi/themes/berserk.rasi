@@ -1,0 +1,82 @@
+* {
+    black:        #09090b;
+    dark-gray:    #141417;
+    mid-gray:     #52525b;
+    white:        #f4f4f5;
+    pure-white:   #ffffff;
+
+    background-color: @black;
+    text-color:       @white;
+    margin:           0;
+    padding:          0;
+    spacing:          0;
+}
+
+window {
+    width:            550px;
+    border:           2px;
+    border-color:     @pure-white;
+    border-radius:    0px;
+    background-color: @black;
+}
+
+mainbox {
+    padding: 14px;
+}
+
+inputbar {
+    children:          [prompt, entry];
+    background-color:  @dark-gray;
+    border:            0 0 2px 0;
+    border-color:      @pure-white;
+    border-radius:     0px;
+    padding:           8px 12px;
+    margin:            0 0 12px 0;
+}
+
+prompt {
+    text-color:       @pure-white;
+    background-color: inherit;
+    margin:           0 8px 0 0;
+}
+
+entry {
+    background-color:  inherit;
+    text-color:        @pure-white;
+    placeholder:       "Szukaj...";
+    placeholder-color: @mid-gray;
+}
+
+listview {
+    lines:        8;
+    columns:      1;
+    fixed-height: false;
+}
+
+element {
+    padding:       8px 12px;
+    border-radius: 0px;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: @black;
+    text-color:       @white;
+}
+
+element selected.normal {
+    background-color: @pure-white;
+    text-color:       @black;
+}
+
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+    vertical-align:   0.5;
+}
+
+element-icon {
+    background-color: inherit;
+    size:             22px;
+    margin:           0 10px 0 0;
+}

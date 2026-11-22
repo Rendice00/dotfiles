@@ -1,0 +1,17 @@
+configuration {
+font: "FiraCode Nerd Font 13";
+show-icons: true;
+matching: "fuzzy";
+window-format: "{t}";
+display-window: "»" ;
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+}
+
+@theme "~/.config/rofi/themes/berserk.rasi"
